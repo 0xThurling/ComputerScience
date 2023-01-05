@@ -1,6 +1,10 @@
 {
   "files.associations": {
-    "string": "c"
+    "string": "c",
+    "__bit_reference": "c",
+    "bitset": "c",
+    "chrono": "c",
+    "unordered_map": "c"
   },
   "C_Cpp_Runner.msvcBatchPath": "",
   "C_Cpp_Runner.cCompilerPath": "clang",
