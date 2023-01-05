@@ -7,6 +7,7 @@ int compute_score(string word, char alphabet[], int point[]);
 
 int main(void)
 {
+    
     string player_words[2];
     int points[26] = {1,3,3,2,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,1,4,4,8,4,10};
     char alphabet[26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
