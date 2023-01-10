@@ -16,7 +16,7 @@ typedef struct
     int charlie;
 } results;
 
-results apply_votes(string rank, int point);
+results apply_votes(string rank, int point, results result);
 
 int main(void)
 {
@@ -24,41 +24,43 @@ int main(void)
     
     vote votes[amount];
     results result;
+    result.alice = 0;
+    result.bob = 0;
+    result.charlie = 0;
 
     for (int i = 0; i < amount; i++)
     {
         for (int j = 0; j < 3; j++)
         {
             string rank = get_string("Rank %i: ", j + 1);
-            result = apply_votes(rank, j + 1);
+            result = apply_votes(rank, j + 1, result);
         }
         printf("\n");
     }
 
-    if (result.alice <= result.bob && result.bob < result.charlie)
+    if ((result.alice <= result.bob || result.bob <= result.alice) && (result.bob < result.charlie && result.alice < result.charlie))
     {
         printf("%s\n", "Charlie");
         return 0;
     }
 
-    if (result.alice <= result.charlie && result.charlie < result.bob)
+    if ((result.alice <= result.charlie || result.charlie <= result.alice) && (result.charlie < result.bob && result.alice < result.bob))
     {
         printf("%s\n", "Bob");
         return 0;
     }
 
-    if (result.charlie <= result.bob && result.bob < result.alice)
+    if ((result.charlie <= result.bob || result.bob <= result.charlie) && (result.bob < result.alice &&  result.charlie < result.alice))
     {
-        printf("%s\n", "Charlie");
+        printf("%s\n", "Alice");
         return 0;
     }
     
     
 }
 
-results apply_votes(string rank, int point)
+results apply_votes(string rank, int point,  results result)
 {
-    results result;
     if (!strcmp(rank, "Alice") && point == 1)
     {
         result.alice += 3;
@@ -88,4 +90,6 @@ results apply_votes(string rank, int point)
     } else if (!strcmp(rank, "Charlie") && point == 3) {
         result.charlie += 1;
     }
+
+    return result;
 }
