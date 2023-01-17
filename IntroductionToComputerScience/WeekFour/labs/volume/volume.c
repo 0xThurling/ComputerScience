@@ -57,7 +57,6 @@ int main(int argc, char *argv[])
         
         fwrite(bufferFactor, sizeof(uint8_t), 1, output);
     }
-
     // Close files
     fclose(input);
     fclose(output);
