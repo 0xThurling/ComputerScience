@@ -1,0 +1,15 @@
+/Users/jthurling/RiderProjects/Minesweeper/Minesweeper/bin/Debug/net7.0/Minesweeper
+/Users/jthurling/RiderProjects/Minesweeper/Minesweeper/bin/Debug/net7.0/Minesweeper.deps.json
+/Users/jthurling/RiderProjects/Minesweeper/Minesweeper/bin/Debug/net7.0/Minesweeper.runtimeconfig.json
+/Users/jthurling/RiderProjects/Minesweeper/Minesweeper/bin/Debug/net7.0/Minesweeper.dll
+/Users/jthurling/RiderProjects/Minesweeper/Minesweeper/bin/Debug/net7.0/Minesweeper.pdb
+/Users/jthurling/RiderProjects/Minesweeper/Minesweeper/obj/Debug/net7.0/Minesweeper.csproj.AssemblyReference.cache
+/Users/jthurling/RiderProjects/Minesweeper/Minesweeper/obj/Debug/net7.0/Minesweeper.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jthurling/RiderProjects/Minesweeper/Minesweeper/obj/Debug/net7.0/Minesweeper.AssemblyInfoInputs.cache
+/Users/jthurling/RiderProjects/Minesweeper/Minesweeper/obj/Debug/net7.0/Minesweeper.AssemblyInfo.cs
+/Users/jthurling/RiderProjects/Minesweeper/Minesweeper/obj/Debug/net7.0/Minesweeper.csproj.CoreCompileInputs.cache
+/Users/jthurling/RiderProjects/Minesweeper/Minesweeper/obj/Debug/net7.0/Minesweeper.dll
+/Users/jthurling/RiderProjects/Minesweeper/Minesweeper/obj/Debug/net7.0/refint/Minesweeper.dll
+/Users/jthurling/RiderProjects/Minesweeper/Minesweeper/obj/Debug/net7.0/Minesweeper.pdb
+/Users/jthurling/RiderProjects/Minesweeper/Minesweeper/obj/Debug/net7.0/Minesweeper.genruntimeconfig.cache
+/Users/jthurling/RiderProjects/Minesweeper/Minesweeper/obj/Debug/net7.0/ref/Minesweeper.dll
