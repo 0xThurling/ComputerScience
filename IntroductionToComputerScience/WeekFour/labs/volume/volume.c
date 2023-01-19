@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
     }
 
     uint16_t buffer;
-    
+
     for (int i = 0; i < size; i++)
     {
         fread(&buffer, sizeof(uint8_t), 1, input);
@@ -58,6 +58,7 @@ int main(int argc, char *argv[])
         
         fwrite(bufferFactor, sizeof(uint8_t), 1, output);
     }
+    
     // Close files
     fclose(input);
     fclose(output);
