@@ -16,11 +16,14 @@ typedef struct node
 }
 node;
 
-// TODO: Choose number of buckets in hash table
-const unsigned int N = (26 * 26);
+// Add a index for garbage words
+const unsigned int N = (26 * 26) + 1;
+unsigned int count = 0;
 
 // Hash table
 node *table[N];
+
+void RecurseFree(node *ptr);
 
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
@@ -38,25 +41,27 @@ bool check(const char *word)
             } else
             {
                 int compare = 0;
+                char *temp_buffer = malloc(strlen(word));
+                for (int i = 0; word[i] != '\0'; i++)
+                {
+                    temp_buffer[i] = tolower(word[i]);
+                }
                 while (ptr != NULL)
                 {
-                    compare = strcmp(ptr->word, word);
+                    compare = strcmp(ptr->word, temp_buffer);
                     ptr = ptr->next;
+                    if (compare == 0)
+                    {
+                        free(temp_buffer);
+                        return true;
+                    }
+                    
                 }
-                return compare == 0;
+                free(temp_buffer);
+                return false;
             }
         }
     }
-    
-    //printf("%i\n", word[0]);
-    
-    
-    // while (ptr->next != NULL)
-    // {
-    //     printf("%s\n", ptr->word);
-    //     ptr = ptr->next;
-    // }
-    
 
     return true;
 }
@@ -64,8 +69,9 @@ bool check(const char *word)
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
+    int hash_value = (toupper(word[0]) - 'A') + (toupper(word[1]) - 'A');
     // TODO: Improve this hash function
-    return (toupper(word[0]) - 'A') + (toupper(word[1]) - 'A');
+    return hash_value < 0 ? N - 1 : hash_value;
 }
 
 // Loads dictionary into memory, returning true if successful, else false
@@ -84,7 +90,6 @@ bool load(const char *dictionary)
 
     //Holds word temporarily in memory
     char buffer[LENGTH + 1];
-    
     for (int i = 0, buffer_i = 0; i < size; i++)
     {
         //Holds word temporaroly
@@ -99,12 +104,12 @@ bool load(const char *dictionary)
                 // Adds a new node to the hash table is there isn't a value
                 // Allocates memory for a word
                 node *new_node = malloc(sizeof(node));
-                buffer[ strcspn(buffer, "\r\n") ] = '\0';
+                buffer[strcspn(buffer, "\r\n")] = '\0';
                 strcpy(new_node->word, buffer);
                 new_node->next = NULL;
-
                 // Adds node to the hash table
                 table[hash_table_index] = new_node;
+                count++;
             } else
             {
                 // Gets first item
@@ -112,6 +117,7 @@ bool load(const char *dictionary)
 
                 // Adds item to the front
                 node *new_node = malloc(sizeof(node));
+                //printf("Got Here\n");
                 buffer[ strcspn(buffer, "\r\n") ] = '\0';
                 strcpy(new_node->word, buffer);
                 new_node->next = head;
@@ -123,6 +129,7 @@ bool load(const char *dictionary)
                 }
 
                 table[hash_table_index] = new_node;
+                count++;
             }
 
             buffer_i = 0;
@@ -137,6 +144,7 @@ bool load(const char *dictionary)
     
     fclose(chosen_dictionary);
 
+    
     return true;
 }
 
@@ -144,12 +152,30 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-    return 0;
+    return count;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
     // TODO
-    return false;
+
+    for (int i = 0; i < N; i++)
+    {
+        RecurseFree(table[i]);
+    }
+
+    return true;
+}
+
+void RecurseFree(node *ptr)
+{
+    if (ptr == NULL)
+    {
+        return;
+    }
+    
+    RecurseFree(ptr->next);
+    
+    free(ptr);
 }
