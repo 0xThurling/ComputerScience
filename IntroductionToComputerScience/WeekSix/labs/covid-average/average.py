@@ -19,5 +19,4 @@ def main():
     
     print(total/14)
 
-
 main()
