@@ -1,0 +1,4 @@
+Standard ML of New Jersey (64-bit) v110.99.3 [built: Thu Jul 28 00:35:16 2022
+- 1+1;
+val it = 2 : int
+- 
