@@ -3,16 +3,20 @@
 
 (* Functions taking or producing lists *)
 
+(* This will recursively sum the elements of a list *)
 fun sum_list (xs : int list) =
     if null xs
     then 0
     else hd(xs) + sum_list(tl(xs))
 
+
+(* This will recursively count down from a specified value and then create a list by consing on the recursive values *)
 fun countdown (x : int) =
     if x=0
     then []
     else x :: countdown(x-1)
 
+(* Appends two lists that was given to the function, by recursively going over each element of the first list and then once we are done with the first list we can append the other list *)
 fun append (xs : int list, ys : int list) = (* part of the course logo :) *)
     if null xs
     then ys
