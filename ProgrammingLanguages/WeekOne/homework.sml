@@ -37,3 +37,11 @@ fun number_in_months(dates: (int * int * int) list, months: int list) =
     in
         step_over_the_dates(dates)
     end
+
+
+fun dates_in_month(dates: (int * int * int) list, month: int) =
+    if not(null dates) andalso (#2 (hd dates)) = month
+        then (hd dates)::dates_in_month(tl dates, month)
+    else if null (dates)
+        then []
+    else dates_in_month(tl dates, month)
