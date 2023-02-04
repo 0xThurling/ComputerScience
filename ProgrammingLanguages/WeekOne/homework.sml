@@ -52,7 +52,12 @@ fun dates_in_months(dates: (int * int * int) list, months: int list) =
    then []
    else dates_in_month(dates, hd months) @ dates_in_months(dates, tl months)
 
-fun test(frst: int list, scd: int list) =
-    if null scd
-    then []
-    else test(frst, hd scd) @ test(frst, tl scd)
+fun get_nth(words: string list, nth: int) =
+    let
+        fun get_word(word: string list, element: int) =
+            if element = nth
+            then hd word
+            else get_word(tl word, element + 1)
+    in
+        get_word(words, 1)
+    end
