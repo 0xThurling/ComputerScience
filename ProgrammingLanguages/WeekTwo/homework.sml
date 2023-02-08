@@ -78,3 +78,57 @@ fun card_value card =
       | (s,Ace) => 11 
       | (s,_) => 10 
 		  
+fun remove_card (cards, card, e) =
+    let
+	fun same_card (c1, c2) =
+	    c1 = c2
+
+	fun remove_from_list (cards, card, removed) =
+	    case cards of
+		[] => []
+	      | x::xs => case same_card (x, card) of
+			     true => (case removed of
+					 false => [] @ remove_from_list(xs, x, true)
+				       | true => x::remove_from_list(xs, x, true))
+			   | false => x::remove_from_list(xs, x, false)
+
+	fun is_in_list (cards_values) =
+	    case cards_values of
+		(([], c), false) => false
+	      | (_, true) => true
+	      | ((x::xs, c),false) => case same_card(x, c) of
+					  true => is_in_list ((xs,c), true)
+					| false => is_in_list ((xs,c), false) 
+	    
+    in
+	case is_in_list ((cards, card), false) of
+	    true => remove_from_list (cards, card, false)
+	  | false => raise e 
+    end
+
+fun all_same_color (cards) =
+    let
+	fun same_color card_tuple =
+	    case card_tuple of
+		([],c, true) => true
+	      | (_, c,false) => false 
+	      | (x::xs,c, true) => case card_color(x) = card_color(c) of
+				    true => same_color(xs,x,true)
+				  | false => same_color(xs,x,false) 
+    in
+	case cards of
+	    x::xs => same_color (xs, x, true)
+	  | _ => false
+    end
+
+fun sum_cards (cards) =
+    let
+	fun sum (cards, acc) =
+	    case cards of
+		[] => acc
+	      | x::xs => sum(xs, acc + card_value(x)) 
+    in
+	sum(cards, 0)
+    end
+
+	
