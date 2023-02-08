@@ -70,4 +70,11 @@ fun card_color card =
 		      Clubs => Black
 		    | Spades => Black
 		    | Diamonds => Red
-		    | Hearts => Red 
+		    | Hearts => Red
+
+fun card_value card =
+    case card of
+	(s,Num n) => n 
+      | (s,Ace) => 11 
+      | (s,_) => 10 
+		  
