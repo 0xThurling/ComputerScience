@@ -130,5 +130,3 @@ fun sum_cards (cards) =
     in
 	sum(cards, 0)
     end
-
-	
