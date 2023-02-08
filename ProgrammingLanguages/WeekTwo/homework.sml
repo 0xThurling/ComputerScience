@@ -23,19 +23,27 @@ exception IllegalMove
 
 fun all_except_option tuple =
     let
-        fun compare (values, is_in_list) =
-            case values of
-                (w, []) => []
-              | (w, x::xs) => case same_string(w, x) of
-                                   true => compare((w, xs), true)
-                                 | false => x::compare((w, xs), false)
-    in
-        compare(tuple, false)
-    end
+	fun does_contain_values values =
+	    case values of
+		((w, []), false) => false
+	      | (_, true) => true 
+	      | ((w, x::xs), _) => case same_string(w, x) of
+				       true => does_contain_values((w,xs), true)
+				     | false => does_contain_values((w, xs), false)
 
+	fun get_list (value) =
+	    case value of
+		(w, []) => []
+	      | (w, x::xs)  => case same_string(w,x) of
+				  true => xs
+				| false => x::get_list(w, xs) 
+    in
+        case does_contain_values(tuple, false) of
+	    true => get_list(tuple)
+	  | false => []
+    end
+	
 fun get_substitutions1 (word_lists, word) =
     case word_lists of
         x::xs => all_except_option(word, x) @ get_substitutions1 (xs, word)
-      | _ => []
-
-fun similar_names ([], name) =
+      | _ => [] 
