@@ -47,3 +47,27 @@ fun get_substitutions1 (word_lists, word) =
     case word_lists of
         x::xs => all_except_option(word, x) @ get_substitutions1 (xs, word)
       | _ => [] 
+
+fun similar_names (word_list, record) =
+    let
+	fun cons_records(words, record) =
+	    case words of
+		[] => []
+	      | x::xs => case record of
+			     {first=a,middle=b,last=c} =>
+			          [{first=x, middle=b, last=c}] @ cons_records(xs, record)
+    in 
+	case record of
+	    {first=a,middle=b,last=c} => case get_substitutions1 (word_list, a) of
+					     [] => []
+					   | x::xs => [record] @ [{first=x, middle=b,last=c}] @ cons_records(xs, record)
+    end
+	
+	 
+fun card_color card =
+    case card of
+	(s, r) => case s of
+		      Clubs => Black
+		    | Spades => Black
+		    | Diamonds => Red
+		    | Hearts => Red 
