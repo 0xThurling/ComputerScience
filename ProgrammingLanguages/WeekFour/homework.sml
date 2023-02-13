@@ -57,3 +57,5 @@ fun longest_capitalized words =
   end
 
 fun rev_string word = String.implode o List.rev o String.explode
+
+(*Continue on from here Homework 3*)
