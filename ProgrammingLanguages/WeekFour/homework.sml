@@ -40,8 +40,20 @@ fun f s = Char.isUpper(String.sub(s, 0))
 fun only_capitals letters = List.filter f letters      
 
 fun longest_string1 (words: string list) =
-  let
-    
-  in
-    List.foldl (fn (x, y) => if String.size x > String.size y then x else y) "" words
+  List.foldl (fn (x, y) => if String.size x > String.size y then x else y) "" words
+
+fun longest_string2 (words: string list) = 
+  List.foldl (fn (x, y) => if String.size x < String.size y then x else y) "" words
+
+fun longest_string_helper f words = List.foldl f "" words
+fun longest_string3 words = 
+  longest_string_helper (fn (x, y) => if String.size x > String.size y then x
+                                      else y) words
+
+
+fun longest_capitalized words = 
+  let val xs = only_capitals words in 
+    List.foldl (fn (x, y) => if String.size x > String.size y then x else y) "" xs
   end
+
+fun rev_string word = String.implode o List.rev o String.explode
