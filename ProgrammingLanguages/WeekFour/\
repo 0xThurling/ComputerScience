@@ -43,5 +43,5 @@ fun longest_string1 (words: string list) =
   let
     
   in
-    List.foldl (fn (x, y) => if String.size x > String.size y then x else y) "" words
+    List.foldl (fn x => x = "a") "" words
   end
