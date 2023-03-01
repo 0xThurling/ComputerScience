@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-01T15:30:53.700Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.50" etag="qT-OprTYlio3q_6JGNQ3" version="20.8.23" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-03-01T15:30:59.073Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.50" etag="57r1pdxSvbv1i8AgiJVp" version="20.8.23" type="github" pages="2">
   <diagram name="And-Gate" id="u10YveOSF3FBLlsxwQq4">
     <mxGraphModel dx="1434" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -327,7 +327,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="fPSkez0-Y5Z7DCAbJ3Fu-31" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=ellipse;perimeter=ellipsePerimeter;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="230" y="520" width="15" height="15" as="geometry" />
+          <mxGeometry x="230" y="540" width="15" height="15" as="geometry" />
         </mxCell>
         <mxCell id="fPSkez0-Y5Z7DCAbJ3Fu-32" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=ellipse;perimeter=ellipsePerimeter;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="230" y="450" width="15" height="15" as="geometry" />
