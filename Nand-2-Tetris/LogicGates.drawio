@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-01T07:57:03.825Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.50" etag="O2FrXX2P-CtnEDC53DLq" version="20.8.23" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-01T07:57:25.517Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.50" etag="OrZMtFMJO3lin7rIGuLE" version="20.8.23" type="github">
   <diagram name="And-Gate" id="u10YveOSF3FBLlsxwQq4">
     <mxGraphModel dx="925" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -141,6 +141,9 @@
         </mxCell>
         <mxCell id="NyGEZXsJiVMz1paDzBxX-48" value="if a=b=1 then out=1 else out=0" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;strokeWidth=2;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="740" y="160" width="250" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="NyGEZXsJiVMz1paDzBxX-49" value="Functional Requirement" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="750" y="170" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
