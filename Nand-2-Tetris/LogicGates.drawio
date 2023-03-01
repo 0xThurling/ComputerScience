@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-01T08:21:56.433Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.50" etag="zzvLdqjGvtLNoUZzIzFq" version="20.8.23" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-01T08:51:22.953Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.50" etag="9J9W7iZFDN30eHsH9gzG" version="20.8.23" type="github">
   <diagram name="And-Gate" id="u10YveOSF3FBLlsxwQq4">
     <mxGraphModel dx="1147" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -174,8 +174,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="NyGEZXsJiVMz1paDzBxX-63" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fontSize=12;endArrow=none;endFill=0;startSize=8;endSize=8;" edge="1" parent="1" source="NyGEZXsJiVMz1paDzBxX-59" target="NyGEZXsJiVMz1paDzBxX-62">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="NyGEZXsJiVMz1paDzBxX-63" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=2;fontSize=12;endArrow=none;endFill=0;startSize=8;endSize=8;" edge="1" parent="1" source="NyGEZXsJiVMz1paDzBxX-59">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="585" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="NyGEZXsJiVMz1paDzBxX-59" value="NAND" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.logic_gate;operation=and;negating=1;negSize=0.15;rounded=1;strokeColor=default;strokeWidth=2;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="170" y="555" width="100" height="60" as="geometry" />
@@ -183,9 +185,10 @@
         <mxCell id="NyGEZXsJiVMz1paDzBxX-54" value="B" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.inverting_contact;rounded=1;strokeColor=default;strokeWidth=2;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="110" y="610" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="NyGEZXsJiVMz1paDzBxX-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=2;fontSize=12;endArrow=none;endFill=0;startSize=8;endSize=8;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="NyGEZXsJiVMz1paDzBxX-62" target="NyGEZXsJiVMz1paDzBxX-10">
+        <mxCell id="NyGEZXsJiVMz1paDzBxX-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=2;fontSize=12;endArrow=none;endFill=0;startSize=8;endSize=8;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="NyGEZXsJiVMz1paDzBxX-10">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="530" y="585.4000000000001" as="targetPoint" />
+            <mxPoint x="413.5" y="585" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="NyGEZXsJiVMz1paDzBxX-65" value="Out" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="NyGEZXsJiVMz1paDzBxX-64">
@@ -193,8 +196,8 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NyGEZXsJiVMz1paDzBxX-62" value="NOT" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.inverter_2;rounded=1;strokeColor=default;strokeWidth=2;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="313.5" y="555" width="100" height="60" as="geometry" />
+        <mxCell id="NyGEZXsJiVMz1paDzBxX-66" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.logic_gate;operation=and;negating=1;negSize=0.15;rounded=1;strokeColor=default;strokeWidth=2;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="314" y="555" width="100" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
