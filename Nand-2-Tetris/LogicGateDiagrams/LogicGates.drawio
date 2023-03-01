@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-01T15:40:43.143Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.50" etag="-7RxMWdIKneVaoIpFe2V" version="20.8.23" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-03-01T15:41:34.289Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.50" etag="WT85Nii8bZMFrW9TFwjx" version="20.8.23" type="github" pages="2">
   <diagram name="And-Gate" id="u10YveOSF3FBLlsxwQq4">
     <mxGraphModel dx="1434" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -345,23 +345,29 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="fPSkez0-Y5Z7DCAbJ3Fu-40" value="&#xa;&#xa;A" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="420" y="565" width="20" height="20" as="geometry" />
+          <mxGeometry x="390" y="575" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="fPSkez0-Y5Z7DCAbJ3Fu-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.948;entryY=0.499;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;endArrow=none;endFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="fPSkez0-Y5Z7DCAbJ3Fu-43" target="fPSkez0-Y5Z7DCAbJ3Fu-33">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="400" y="505" />
+              <mxPoint x="400" y="450" />
+              <mxPoint x="400" y="510" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="fPSkez0-Y5Z7DCAbJ3Fu-43" value="NOT" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.inverter_2;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="400" y="430" width="100" height="60" as="geometry" />
+          <mxGeometry x="410" y="420" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="fPSkez0-Y5Z7DCAbJ3Fu-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=none;endFill=0;" edge="1" parent="1" source="fPSkez0-Y5Z7DCAbJ3Fu-44" target="fPSkez0-Y5Z7DCAbJ3Fu-43">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="fPSkez0-Y5Z7DCAbJ3Fu-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=none;endFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fPSkez0-Y5Z7DCAbJ3Fu-44" target="fPSkez0-Y5Z7DCAbJ3Fu-43">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="490" />
+              <mxPoint x="510" y="490" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="fPSkez0-Y5Z7DCAbJ3Fu-44" value="" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="510" y="450" width="20" height="20" as="geometry" />
+        <mxCell id="fPSkez0-Y5Z7DCAbJ3Fu-44" value="&#xa;&#xa;B" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="500" y="575" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="fPSkez0-Y5Z7DCAbJ3Fu-54" value="" style="edgeStyle=segmentEdgeStyle;endArrow=none;html=1;curved=0;rounded=0;endSize=8;startSize=8;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;endFill=0;" edge="1" parent="1" source="fPSkez0-Y5Z7DCAbJ3Fu-31" target="fPSkez0-Y5Z7DCAbJ3Fu-33">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
