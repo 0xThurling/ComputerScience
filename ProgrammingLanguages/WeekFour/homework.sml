@@ -66,3 +66,19 @@ fun first_answer f x =
   | x::xs => case f(x) of
 	 		NONE => first_answer f xs
    			| SOME x => x
+
+fun all_answers f x = 
+	let
+		fun helper ([], []) =
+			NONE
+			| helper ([], acc) = SOME acc
+			| helper (x::xs, acc) = 
+				case f(x) of
+					NONE => helper (xs, acc)
+					| SOME x => helper (xs, x @ acc)
+	in
+		case x of
+			[] => SOME []
+			| _ => helper (x, [])
+	end
+
