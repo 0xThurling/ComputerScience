@@ -59,3 +59,10 @@ fun longest_capitalized words =
 fun rev_string word = String.implode o List.rev o String.explode
 
 (*Continue on from here Homework 3*)
+
+fun first_answer f x = 
+  case x of 
+  [] => raise NoAnswer
+  | x::xs => case f(x) of
+	 		NONE => first_answer f xs
+   			| SOME x => x
