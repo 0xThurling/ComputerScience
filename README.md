@@ -8,3 +8,7 @@ Courses:
 - How to code: Complex Data - Always mostly behind a paywall (skipped - not useful for learning)
 - Programming Languages Part A (Almost done)
 - Nand-2-Tetris (Busy)
+
+# Notes:
+
+Programming Languages Theory needs some work
