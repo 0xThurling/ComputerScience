@@ -1,4 +1,4 @@
-# ComputerScience
+# Computer Science
 
 Following the OSSU curriculum
 
